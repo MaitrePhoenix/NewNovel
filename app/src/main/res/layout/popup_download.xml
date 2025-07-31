@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Télécharger de chapitres"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Du chapitre : "
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/chapMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Au chapitre : "
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/chapMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Les numeros à indiquer correspondent à ceux à côté du # en dessous du nom de chaque chapitre\nAssurez vous que l'image du novel et la liste des chapitres aient chargé avant d'appuyer sur valider"/>
+
+    <TextView
+        android:id="@+id/MessageErreurDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text=""/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boutonAnnuler"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Annuler"/>
+
+        <Button
+            android:id="@+id/boutonValider"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

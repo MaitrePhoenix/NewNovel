@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.lecture.LectureActivity">
+
+    <TextView
+        android:id="@+id/TitreChapitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bouttonPrecedent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chapitre précédent"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/texte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:paddingHorizontal="5dp"
+                android:scrollbars="vertical"
+                android:text="Chargement"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/bouttonSuivant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chapitre suivant"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

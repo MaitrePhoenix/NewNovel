@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/lu"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="lu"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lu"
+        android:id="@+id/nomChapitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textSize="16sp">
+    </TextView>
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nomChapitre"
+        android:id="@+id/numero"
+        android:textColor="#808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</RelativeLayout>

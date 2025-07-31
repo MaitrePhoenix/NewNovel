@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_toolbar"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/boutonListeNovel"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="33"
+        android:scaleType="centerInside"
+        android:src="@mipmap/liste_icone"
+        android:contentDescription="Bouton liste novel"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/boutonFavoris"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="33"
+        android:src="@mipmap/favori_icone"
+        android:scaleType="centerInside"
+        android:contentDescription="Bouton favori"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/boutonTelechargement"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="33"
+        android:src="@mipmap/download_icone"
+        android:scaleType="centerInside"
+        android:contentDescription="Bouton telechargement"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/boutonOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="33"
+        android:src="@mipmap/options_icone"
+        android:scaleType="centerInside"
+        android:contentDescription="Bouton options"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

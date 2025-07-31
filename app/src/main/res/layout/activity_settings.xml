@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingsActivity">
+
+    <TextView
+        android:id="@+id/TitreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Options :"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TitreOptions"
+        android:layout_above="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTheme"
+                android:text="Thème : "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTheme"
+                android:orientation="horizontal"
+                android:id="@+id/LinearLayoutTheme">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Blanc"
+                    android:id="@+id/btnLight"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Noir"
+                    android:id="@+id/btnDark"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LinearLayoutTheme"
+                android:id="@+id/textExclureSite"
+                android:text="Afficher les  novels des sites : "/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listeSiteTradOptions"
+                android:layout_below="@+id/textExclureSite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listeSiteTradOptions"
+                android:id="@+id/sauvegardes">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSauvegardes"
+                    android:text="Sauvegardes : "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textSauvegardes"
+                    android:orientation="horizontal"
+                    android:id="@+id/RecupChargerSave">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Récupérer"
+                        android:id="@+id/btnRecuperer"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="60"
+                        android:text="Charger"
+                        android:id="@+id/btnCharger"/>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RecupChargerSave"
+                    android:id="@+id/textSave"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnValiderCharger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textSave"
+                    android:visibility="gone"
+                    android:text="Valider" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/boutonDiscord"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sauvegardes"
+                android:layout_marginTop="45dp"
+                android:text="Discord" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tool_bar"/>
+
+</RelativeLayout>
